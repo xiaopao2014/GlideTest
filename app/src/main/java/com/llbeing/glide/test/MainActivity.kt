@@ -1,14 +1,17 @@
 package com.llbeing.glide.test
 
+import android.graphics.Bitmap
 import android.os.Bundle
-import com.google.android.material.snackbar.Snackbar
+import android.util.Log
+import android.view.Menu
+import android.view.MenuItem
 import androidx.appcompat.app.AppCompatActivity
 import androidx.navigation.findNavController
 import androidx.navigation.ui.AppBarConfiguration
 import androidx.navigation.ui.navigateUp
 import androidx.navigation.ui.setupActionBarWithNavController
-import android.view.Menu
-import android.view.MenuItem
+import com.bumptech.glide.Glide
+import com.google.android.material.snackbar.Snackbar
 import com.llbeing.glide.test.databinding.ActivityMainBinding
 
 class MainActivity : AppCompatActivity() {
@@ -32,6 +35,7 @@ class MainActivity : AppCompatActivity() {
             Snackbar.make(view, "Replace with your own action", Snackbar.LENGTH_LONG)
                 .setAction("Action", null).show()
         }
+        Log.i("llbeing", "pauseRequests")
     }
 
     override fun onCreateOptionsMenu(menu: Menu): Boolean {
